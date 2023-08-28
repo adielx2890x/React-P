@@ -3,7 +3,6 @@
 
 import React, { useState, useEffect } from "react";
 import { getRandomPokemonId } from "./poke-api"; // Importa la función de otro archivo
-
 function HeaderV2() {
     // Estado para almacenar los Pokémon aleatorios
     const [randomPokemons, setRandomPokemons] = useState([]);
