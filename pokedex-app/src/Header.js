@@ -32,7 +32,7 @@ function Header() {
         {randomPokemons.map((pokemon) => (
           <div id="pokemons" key={pokemon.id}>
             <img
-              src={pokemon.sprites.front_default}
+              src={pokemon.sprites.front_shiny}
               alt={pokemon.name}
               id="pokemonsImgs"
             />
