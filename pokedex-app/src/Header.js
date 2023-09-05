@@ -27,7 +27,8 @@ function Header() {
 
   return (
     <header id="pHeader">
-      <h1>Pokemon</h1>
+      <h1>Wellcome to the Pokedex</h1>
+      <p>the place that you'll can know all pokemon from the commodity of your home or institution enjoy it</p>
       <div className="contenedor">
         {randomPokemons.map((pokemon) => (
           <div id="pokemons" key={pokemon.id}>
