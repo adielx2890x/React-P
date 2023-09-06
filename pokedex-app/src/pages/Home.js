@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 // import HeaderV2 from "../HeaderV2";
 import Header from "../Header";
+import HeaderV2 from "../HeaderV2";
 
 export const Home = () => {
   const [Pokemones, setPokemones] = useState([]);

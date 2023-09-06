@@ -47,3 +47,8 @@ function Header() {
 }
 
 export default Header;
+
+
+
+//mostrar pokemones en ordeny ID
+//Poner barra de busqueda para buscar el pokemon por el nombre
