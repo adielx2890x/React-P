@@ -1,6 +1,5 @@
 export async function getPokemonList(url) {
   var pokemonData = [];
-  var pokemonData = [];
   var result = {};
   try {
     // Consumir el api con la url recibida

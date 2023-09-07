@@ -1,4 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
+import { getPokemonList } from "./api";
+
+
 
 function Ajai() {
   return (
@@ -6,6 +9,7 @@ function Ajai() {
       <div>
         <h1>Pokedex</h1>
       </div>
+
       <div>
         <button>
 

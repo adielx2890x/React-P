@@ -17,8 +17,8 @@ function Header() {
           );
           const data = await response.json();
           fetchedPokemons.push(data);
+          console.log(pokemonIds);
         }
-
         setRandomPokemons(fetchedPokemons);
       } catch (error) {}
     };
@@ -28,7 +28,10 @@ function Header() {
   return (
     <header id="pHeader">
       <h1>Wellcome to the Pokedex</h1>
-      <p>the place that you'll can know all pokemon from the commodity of your home or institution enjoy it</p>
+      <p>
+        the place that you'll can know all pokemon from the commodity of your
+        home or institution enjoy it
+      </p>
       <div className="contenedor">
         {randomPokemons.map((pokemon) => (
           <div id="pokemons" key={pokemon.id}>
@@ -47,8 +50,6 @@ function Header() {
 }
 
 export default Header;
-
-
 
 //mostrar pokemones en ordeny ID
 //Poner barra de busqueda para buscar el pokemon por el nombre

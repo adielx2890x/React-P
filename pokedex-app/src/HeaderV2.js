@@ -1,7 +1,10 @@
 //  Header V2
 
 import React, { useState, useEffect } from "react";
+
 import { getRandomPokemonId } from "./components/api"; // Importa la función de otro archivo
+
+
 function HeaderV2() {
   // Estado para almacenar los Pokémon aleatorios
   const [randomPokemons, setRandomPokemons] = useState([]);
@@ -47,7 +50,7 @@ function HeaderV2() {
         </div>
       ))}
     </div>
-    
+
   </header>
   );
 }

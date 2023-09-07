@@ -71,3 +71,9 @@ ul {
   font-size: 5mm;
   width: 1250px;
 }
+
+html {
+  background-image: url(C:\react-todo\React-P\pokedex-app\public\wallpaperflare.com_wallpaper.jpg);
+background-size: cover;
+
+}
