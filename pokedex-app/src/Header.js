@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 function Header() {
   const [randomPokemons, setRandomPokemons] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     const fetchRandomPokemon = async () => {
       try {
@@ -26,6 +27,7 @@ function Header() {
   }, []);
 
   return (
+    <body id="headerBody">
     <header id="pHeader">
       <h1>Wellcome to the Pokedex</h1>
       <p>
@@ -46,6 +48,10 @@ function Header() {
         ))}
       </div>
     </header>
+
+
+
+    </body>
   );
 }
 

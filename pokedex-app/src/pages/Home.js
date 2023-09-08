@@ -15,7 +15,7 @@ export const Home = () => {
   //     });
   // }, []);
 
-  return (<Header />);
+  return (<Header/>);
 };
 
 //   <h1>Home</h1>

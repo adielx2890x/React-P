@@ -38,7 +38,7 @@ async function getPokemonDetailByUrl(url) {
     return {
       id,
       name: data.name,
-      image: data.sprites.front_default,
+      image: data.sprites.other.dream_world.front_default
     };
   } catch (error) {
     console.error(" Error capturando el detalle", error);

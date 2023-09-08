@@ -75,5 +75,47 @@ ul {
 html {
   background-image: url(C:\react-todo\React-P\pokedex-app\public\wallpaperflare.com_wallpaper.jpg);
 background-size: cover;
+color: #fff;
 
+}
+
+
+#pokemon{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding-right: 48px;
+}
+
+#eachPokemon{
+background-color: #47474750;
+transition: 0.7s background-color;
+font-style: italic;
+font-weight: 100;
+text-decoration: double;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#eachPokemon:hover{
+background-color: #303030;
+
+}
+
+#Pokedex{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#pImgs{
+  width: 150px;
+  height: 150px;
+
+}
+
+#headerBody{
+  
 }
