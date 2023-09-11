@@ -21,7 +21,8 @@ function Header() {
           console.log(pokemonIds);
         }
         setRandomPokemons(fetchedPokemons);
-      } catch (error) {}
+        setIsLoading(false)
+      } catch (error) {setIsLoading(false)}
     };
     fetchRandomPokemon();
   }, []);
@@ -34,7 +35,14 @@ function Header() {
         the place that you'll can know all pokemon from the commodity of your
         home or institution enjoy it
       </p>
-      <div className="contenedor">
+
+
+
+{
+  isLoading ? (<img src="http://gifgifs.com/animations/anime/dragon-ball-z/Vegeta/vegeta_21.gif"></img>) : (
+
+
+<div className="contenedor">
         {randomPokemons.map((pokemon) => (
           <div id="pokemons" key={pokemon.id}>
             <img
@@ -46,7 +54,13 @@ function Header() {
             <p>{pokemon.id}</p>
           </div>
         ))}
+
       </div>
+
+
+  )
+}
+      
     </header>
 
 

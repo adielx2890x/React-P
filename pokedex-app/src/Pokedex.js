@@ -1,61 +1,57 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { getPokemonList } from "./api";
 
-
-
 function Ajai() {
-const [pokemonList, setPokemonList] = useState ([])
+  const [pokemonList, setPokemonList] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
-useEffect(()=>{
-async function fetchData(){
-  const url =  `https://pokeapi.co/api/v2/pokemon`;
-  const data = await getPokemonList(url)
-  if (data){
-    setPokemonList(data.array)
-  }
-}
+  useEffect(() => {
+    async function fetchData() {
+      const url = `https://pokeapi.co/api/v2/pokemon`;
+      const data = await getPokemonList(url);
+      setIsLoading(false);
+      if (data) {
+        setPokemonList(data.array);
+      }
+    }
 
-fetchData()
-}, [])
+    fetchData();
+  }, []);
 
-
-
-
-
-//
+  //
 
   return (
     <main id="Pokedex">
       <div>
         <h1>Pokedex</h1>
       </div>
-<div>
-  <ul id="pokemon">
-    {pokemonList.map((pokemon) =>(
-      <li id="eachPokemon" key={pokemon.id}>
-PID: {pokemon.id} <br/>
-Pokemon: {pokemon.name}, 
-<img id="pImgs" src={pokemon.image}/>
 
-      </li>
-    )
-    
-    )}
-  </ul>
-</div>
-      <div>
-        <button>
+      {isLoading ? (
+        <img
+          id="vImg"
+          src="http://gifgifs.com/animations/anime/dragon-ball-z/Vegeta/vegeta_6.gif"
+          alt=""
+        ></img>
+      ) : (
+        <div>
+          <ul id="pokemon">
+            {pokemonList.map((pokemon) => (
+              <li id="eachPokemon" key={pokemon.id}>
+                PID: {pokemon.id} <br />
+                Pokemon: {pokemon.name},
+                <img id="pImgs" src={pokemon.image} />
+              </li>
+            ))}
+            <div id="boxButton">
+              <button className="buttons">Siguiente</button>
 
-Siguiente
-        </button>
-        
-        <button>
-
-Anterior
-        </button>
-
-        
-      </div>
+              <button className="buttons">
+                <img src="/pokedex-app/public/gokúDerecha.jpg"></img>
+              </button>
+            </div>
+          </ul>
+        </div>
+      )}
     </main>
   );
 }
