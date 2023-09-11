@@ -127,10 +127,26 @@ background-color: #303030;
 
 .buttons{ 
 background-color: #474747;
-width: 100px;
-height:50px ;
+/* width: 100px;
+height:50px ; */
 transition: 0.7s background-color;
 border-radius: 10px;
 border: #00000000;
 
+}
+
+#gokuButton{
+width: 100px;
+height: 200px;
+background-image:url(https://i0.wp.com/www.lacasadeel.net/wp-content/uploads/2018/02/super-saiyan-goku.png?resize=600%2C450&ssl=1);
+background-size: cover;
+background-position: 40%;
+}
+#vegetaButton{
+
+  width: 100px;
+  height: 200px;
+  background-image: url(https://i.pinimg.com/564x/94/95/57/949557a0365dddfd5384ba0918424d0c.jpg);
+  background-size: cover;
+  background-position: 40%;
 }

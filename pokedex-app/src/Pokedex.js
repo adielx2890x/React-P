@@ -43,10 +43,13 @@ function Ajai() {
               </li>
             ))}
             <div id="boxButton">
-              <button className="buttons">Siguiente</button>
+              <button id="vegetaButton" className="buttons">
 
-              <button className="buttons">
-                <img src="/pokedex-app/public/gokúDerecha.jpg"></img>
+        
+              </button>
+
+              <button id="gokuButton" className="buttons">
+               
               </button>
             </div>
           </ul>
