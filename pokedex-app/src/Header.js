@@ -39,7 +39,7 @@ function Header() {
 
 
 {
-  isLoading ? (<img src="http://gifgifs.com/animations/anime/dragon-ball-z/Vegeta/vegeta_21.gif"></img>) : (
+  isLoading ? (<img src="http://gifgifs.com/animations/anime/dragon-ball-z/Vegeta/vegeta_40.gif"></img>) : (
 
 
 <div className="contenedor">

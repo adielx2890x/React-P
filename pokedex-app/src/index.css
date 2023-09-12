@@ -42,7 +42,7 @@ code {
 }
 
 #pNavBar {
-  background-color: #474747;
+  background-color: #77777777;
   font-size: x-large;
   display: grid;
 }
@@ -74,12 +74,11 @@ ul {
 }
 
 html {
-  background-image: url(C:\react-todo\React-P\pokedex-app\public\Stars.gif);
+  background-image: url(C:\react-todo\React-P\pokedex-app\public\colores.gif);
 background-size: cover;
 color: #fff;
 
 }
-
 
 #pokemon{
   display: grid;

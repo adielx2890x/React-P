@@ -18,6 +18,15 @@ function Ajai() {
     fetchData();
   }, []);
 
+
+  function next(){
+
+    alert("hola")
+  }
+
+  function back(){
+    alert("AJAI")
+  }
   //
 
   return (
@@ -43,14 +52,21 @@ function Ajai() {
               </li>
             ))}
             <div id="boxButton">
-              <button id="vegetaButton" className="buttons">
+              <button onClick={back} id="vegetaButton" className="buttons">
 
         
               </button>
 
-              <button id="gokuButton" className="buttons">
+              <button onClick={next} id="gokuButton" className="buttons">
                
               </button>
+
+
+
+              <form>
+                <input type="text"></input>
+                <button>Buscar</button>
+                </form>              
             </div>
           </ul>
         </div>
